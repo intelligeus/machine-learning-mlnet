@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\Data\data_description.txt">
+        <Link>Data\data_description.txt</Link>
+      </Content>
+      <Content Include="..\Data\test.csv">
+        <Link>Data\test.csv</Link>
+      </Content>
+      <Content Include="..\Data\train.csv">
+        <Link>Data\train.csv</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CsvHelper" Version="27.0.2" />
+      <PackageReference Include="Deedle" Version="2.3.0" />
+      <PackageReference Include="Microsoft.Data.Analysis" Version="0.4.0" />
+    </ItemGroup>
+
+</Project>

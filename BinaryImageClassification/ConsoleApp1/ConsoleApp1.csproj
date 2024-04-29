@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>9</LangVersion>
+        <TargetFramework>net7.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\machinelearning\src\Microsoft.ML.TensorFlow\Microsoft.ML.TensorFlow.csproj" />
+      <ProjectReference Include="..\..\..\machinelearning\src\Microsoft.ML.Vision\Microsoft.ML.Vision.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.ML" Version="3.0.1" />
+      <PackageReference Include="Microsoft.ML.DataView" Version="3.0.1" />
+        <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="3.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.ML.Vision">
+        <HintPath>..\..\..\..\.nuget\packages\microsoft.ml.vision\4.0.0-preview.24162.2\lib\netstandard2.0\Microsoft.ML.Vision.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    
+</Project>
